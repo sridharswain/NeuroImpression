@@ -1,0 +1,37 @@
+
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+      <video controls="" autoplay="" name="media" height="350px" id ="video">
+        <source src="/video?name=shivam.webm" type="video/webm">
+      </video>
+
+      <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on('connect',function(){
+    // Send ehlo event right after connect:
+        socket.emit('vid', 'data');
+      });
+      console.log(socket);
+      var vid = document.getElementById("video");
+      socket.on('video', function(msg){
+        console.log('message: ' + msg);
+
+
+        var vid=document.getElementById('video');
+        vid.src= "/video?name="+msg;
+        vid.pause();
+        vid.load();
+        vid.play();
+
+      });
+
+
+    </script>
+    </body>
+  </html>
