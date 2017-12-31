@@ -44,7 +44,7 @@ Clone the repository and change directory to NeuroImpression
                    <B>Contact:</B> (+91) 9521458982<br>
                    </p>
 <B>Abhishek Singh</B>
-                  <p style="font-size: 14px;"><B>DATA SCIENTIST</B><br>
+                  <p style="font-size: 14px;"><B>Data Science and Research</B><br>
                   <B>Github:</B> absingh31<br>
                   <B>E-mail:</B> absinghemail@gmail.com<br>
                   <B>Contact:</B> (+91) 8072561171<br></p>
